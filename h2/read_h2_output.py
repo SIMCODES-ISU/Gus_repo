@@ -19,4 +19,4 @@ def read(file):
 
 read(h2_file_path())
 
-/Users/guswoodard/Desktop/simcodes/Gus_h2_reader-1/h2/h2_output.txt
+# /Users/guswoodard/Desktop/simcodes/Gus_h2_reader-1/h2/h2_output.txt
