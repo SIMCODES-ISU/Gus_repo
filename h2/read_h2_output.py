@@ -3,8 +3,7 @@ from pathlib import Path
 
 
 def h2_file_path():
-    project_root = Path(__file__).resolve().parent.parent
-    return project_root / "h2" / "h2_output.txt"
+    return Path(__file__).resolve().parent / "h2_output.txt"
 # path of file
 
 
