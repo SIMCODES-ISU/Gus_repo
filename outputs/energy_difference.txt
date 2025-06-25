@@ -1,0 +1,6 @@
+ALA_ALA_0.out difference = 0.0
+ALA_ALA_1.out difference = 0.0009947989739202967
+ALA_ALA_2.out difference = -0.001010732101008216
+ALA_ALA_3.out difference = -0.0019948966190668216
+ALA_ALA_4.out difference = 0.0035428792299398992
+ALA_ALA_5.out difference = 0.0037509549539436193
