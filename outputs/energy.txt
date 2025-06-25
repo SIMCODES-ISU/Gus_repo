@@ -1,0 +1,6 @@
+ALA_ALA_0.out Total SCF energy = -699.782153441754
+ALA_ALA_1.out Total SCF energy = -699.78115864278
+ALA_ALA_2.out Total SCF energy = -699.783164173855
+ALA_ALA_3.out Total SCF energy = -699.784148338373
+ALA_ALA_4.out Total SCF energy = -699.778610562524
+ALA_ALA_5.out Total SCF energy = -699.7784024868
