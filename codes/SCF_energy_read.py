@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 
-def energy(root_directory):
+def energy_reader(root_directory):
     results = []
     for root, dirs, files in os.walk(root_directory):
         for filename in files:
@@ -32,4 +32,4 @@ def path():
     return dir_path
 
 
-energy(path())
+(energy_reader(path()))
