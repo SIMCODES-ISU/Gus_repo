@@ -9,7 +9,7 @@ def parse_energy(line):
     # ALA_ALA_0.out Total SCF energy = -699.782153441754
     parts = line.split()
     filename = parts[0] #name
-    energy = float(parts[-1]) # energy value
+    energy = float(parts[5]) # energy value
     return filename, energy
 
 

@@ -1,7 +1,6 @@
 from pathlib import Path
 
-file_path = Path(
-    "/Users/guswoodard/Desktop/energy_reader/outputs/energy.txt")
+file_path = Path(__file__).parent.parent / "outputs" / "energy.txt"
 
 
 def test_energy_file_exists():

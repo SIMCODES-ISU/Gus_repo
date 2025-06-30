@@ -1,9 +1,6 @@
 from pathlib import Path
 
-file_path = Path(
-    "/Users/guswoodard/Desktop/energy_reader/outputs/energy_difference.txt")
-
-# /Users/guswoodard/Desktop/energy_reader/outputs/energy_difference.txt
+file_path = Path(__file__).parent.parent / "outputs" / "energy_difference.txt"
 
 
 def test_all_number_graber():
@@ -11,17 +8,18 @@ def test_all_number_graber():
         for index, line in enumerate(f):
             word = line.split()
             if index == 0:
-                assert(word[3]) == "0.0"
+                assert (word[3]) == "0.0"
             elif index == 1:
-                assert(word[3]) == "0.0009947989739202967"
+                assert (word[3]) == "0.0009947989739202967"
             elif index == 2:
-                assert(word[3]) == "-0.001010732101008216"
+                assert (word[3]) == "-0.001010732101008216"
             elif index == 3:
-                assert(word[3]) == "-0.0019948966190668216"
+                assert (word[3]) == "-0.0019948966190668216"
             elif index == 4:
-                assert(word[3]) == "0.0035428792299398992"
+                assert (word[3]) == "0.0035428792299398992"
             elif index == 5:
-                assert(word[3]) == "0.0037509549539436193"
+                assert (word[3]) == "0.0037509549539436193"
+
 
 test_all_number_graber()
 

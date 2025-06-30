@@ -9,22 +9,27 @@ def energy_reader(root_directory):
             if filename.endswith(".out"):
                 file_path = os.path.join(root, filename)
 
+                energy_value = None
+                total_time = None
+
                 with open(file_path, 'r') as f:
                     for line in f:
                         if "Total SCF energy" in line:
                             words = line.split()
                             energy_value = float(words[4])
-                            results.append(
-                                (filename, energy_value))
-                            break
+                        if "Total times" in line:
+                            words = line.split()
+                            total_time = (words[3])
+                    if energy_value is not None and total_time is not None:
+                        results.append((filename, energy_value, total_time))
 
     results.sort(key=lambda x: x[0])
 
     output_path = Path("outputs/energy.txt")
 
     with open(output_path, 'w') as w:
-        for filename, energy in results:
-            w.write(f"{filename} Total SCF energy = {energy}\n")
+        for filename, energy, total_time in results:
+            w.write(f"{filename} Total SCF energy = {energy} in {total_time}\n")
 
 
 def path():
