@@ -37,7 +37,7 @@ def energy_reader(root_directory):
 
 
 def path():
-    dir_path = Path("file.out")
+    dir_path = Path("read")
     return dir_path
 # give the function a path of the .out files 
 
