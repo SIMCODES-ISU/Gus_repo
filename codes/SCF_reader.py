@@ -8,6 +8,7 @@ def energy_reader(root_directory):
         for filename in files:
             if filename.endswith(".out"):
                 file_path = os.path.join(root, filename)
+                # read all files ends with .out in the directory
 
                 energy_value = None
                 total_time = None
@@ -17,15 +18,18 @@ def energy_reader(root_directory):
                         if "Total SCF energy" in line:
                             words = line.split()
                             energy_value = float(words[4])
+                            # Extract the energy value from the line
                         if "Total times" in line:
                             words = line.split()
                             total_time = (words[3])
+                            # Extract the total time from the line
                     if energy_value is not None and total_time is not None:
                         results.append((filename, energy_value, total_time))
 
     results.sort(key=lambda x: x[0])
+    #sort on the fist element of the tuple, which is the filename
 
-    output_path = Path("outputs/energy.txt")
+    output_path = Path("outputs/SCF_energy.txt")
 
     with open(output_path, 'w') as w:
         for filename, energy, total_time in results:
@@ -33,8 +37,8 @@ def energy_reader(root_directory):
 
 
 def path():
-    dir_path = Path("read")
+    dir_path = Path("file.out")
     return dir_path
-
+# give the function a path of the .out files 
 
 (energy_reader(path()))
