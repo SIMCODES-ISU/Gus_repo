@@ -28,7 +28,7 @@ def number_difference():
             for line in block:
                 name, energy = parse_energy(line)
                 diff = energy - base_energy
-                out.write(f"{name} difference = {diff}\n")
+                out.write(f"{name} difference = {diff * 627.509} Kcal/mol\n")
 
 
 number_difference()
