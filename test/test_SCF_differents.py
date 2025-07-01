@@ -1,6 +1,6 @@
 from pathlib import Path
 
-file_path = Path(__file__).parent.parent / "outputs" / "energy_difference.txt"
+file_path = Path(__file__).parent.parent / "outputs" / "SCF_energy_difference.txt"
 
 
 def test_all_number_graber():
@@ -19,19 +19,6 @@ def test_all_number_graber():
                 assert (word[3]) == "0.0035428792299398992"
             elif index == 5:
                 assert (word[3]) == "0.0037509549539436193"
-
+#open the file and see if the first group of 6 lines has the correct values
 
 test_all_number_graber()
-
-
-#     with open(file, 'r') as f:
-#         for index, line in enumerate(f):
-#             word = line.split()
-#             if (index + 1) % 6 > 0:
-#                 every_sixth_line.append((index, word[0], float(word[5])))
-#                 print(index)
-
-#     return every_sixth_line
-
-
-# print(all_number_graber())

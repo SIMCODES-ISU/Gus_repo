@@ -1,14 +1,14 @@
 from pathlib import Path
 
-file = Path("outputs/energy.txt")
-output_file = Path("outputs/energy_difference.txt")
+file = Path("outputs/SCF_energy.txt")
+output_file = Path("outputs/SCF_energy_difference.txt")
 
 
 def parse_energy(line):
-    # Extract filename and energy float from a line like:
-    # ALA_ALA_0.out Total SCF energy = -699.782153441754
+    # this is a helper function to parse the energy from a line
+    #it is above the main function so the main function can call it
     parts = line.split()
-    filename = parts[0] #name
+    filename = parts[0] #name of the file
     energy = float(parts[5]) # energy value
     return filename, energy
 
@@ -20,6 +20,7 @@ def number_difference():
     with open(output_file, 'w') as out:
         for i in range(0, len(lines), 6):
             block = lines[i:i+6]
+            # Ensure we have a complete block of 6 lines
 
             # Parse first line energy
             base_name, base_energy = parse_energy(block[0])
