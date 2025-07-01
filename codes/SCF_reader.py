@@ -33,11 +33,11 @@ def energy_reader(root_directory):
 
     with open(output_path, 'w') as w:
         for filename, energy, total_time in results:
-            w.write(f"{filename} Total SCF energy = {energy} in {total_time}\n")
+            w.write(f"{filename} Total SCF energy = {energy} hartrees in {total_time}\n")
 
 
 def path():
-    dir_path = Path("file.out")
+    dir_path = Path("read")
     return dir_path
 # give the function a path of the .out files 
 
