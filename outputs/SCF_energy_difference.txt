@@ -1,12 +1,177 @@
-ALA_ALA_0.out difference = 0.0 Kcal/mol
-ALA_ALA_1.out difference = 0.6242453093257515 Kcal/mol
-ALA_ALA_2.out difference = -0.6342434899715647 Kcal/mol
-ALA_ALA_3.out difference = -1.2518155825340023 Kcal/mol
-ALA_ALA_4.out difference = 2.2231886027003562 Kcal/mol
-ALA_ALA_5.out difference = 2.3537579921942067 Kcal/mol
-ALA_ASN_0.out difference = 0.0 Kcal/mol
-ALA_ASN_1.out difference = 1.4785771889105093 Kcal/mol
-ALA_ASN_2.out difference = 1.169758291924594 Kcal/mol
-ALA_ASN_3.out difference = 3.2409201411290995 Kcal/mol
-ALA_ASN_4.out difference = 0.8426240732430494 Kcal/mol
-ALA_ASN_5.out difference = 3.4270643700752084 Kcal/mol
+Filename Difference        (Kcal/mol)
+ALA_ALA_0.out difference = 0.000000
+ALA_ALA_1.out difference = 0.624245
+ALA_ALA_2.out difference = -0.634243
+ALA_ALA_3.out difference = -1.251816
+ALA_ALA_4.out difference = 2.223189
+ALA_ALA_5.out difference = 2.353758
+ALA_ASN_0.out difference = 0.000000
+ALA_ASN_1.out difference = 1.478577
+ALA_ASN_2.out difference = 1.169758
+ALA_ASN_3.out difference = 3.240920
+ALA_ASN_4.out difference = 0.842624
+ALA_ASN_5.out difference = 3.427064
+ALA_CYS_0.out difference = 0.000000
+ALA_CYS_1.out difference = -0.629677
+ALA_CYS_2.out difference = 2.086458
+ALA_CYS_3.out difference = 1.660867
+ALA_CYS_4.out difference = 2.084488
+ALA_CYS_5.out difference = 1.831087
+ALA_GLN_0.out difference = 0.000000
+ALA_GLN_1.out difference = -0.286047
+ALA_GLN_2.out difference = -1.725665
+ALA_GLN_3.out difference = 0.221196
+ALA_GLN_4.out difference = -2.304639
+ALA_GLN_5.out difference = 3.661895
+ALA_GLY_0.out difference = 0.000000
+ALA_GLY_1.out difference = 1.321192
+ALA_GLY_2.out difference = 1.662547
+ALA_GLY_3.out difference = 2.216427
+ALA_GLY_4.out difference = 0.208267
+ALA_GLY_5.out difference = 1.475681
+ALA_HIS_0.out difference = 0.000000
+ALA_HIS_1.out difference = 0.473127
+ALA_HIS_2.out difference = 0.746848
+ALA_HIS_3.out difference = 4.262390
+ALA_HIS_4.out difference = 1.879447
+ALA_HIS_5.out difference = 6.242754
+ALA_ILE_0.out difference = 0.000000
+ALA_ILE_1.out difference = 1.094378
+ALA_ILE_2.out difference = -0.195188
+ALA_ILE_3.out difference = -0.278849
+ALA_ILE_4.out difference = -0.980754
+ALA_ILE_5.out difference = 2.391692
+ALA_LEU_0.out difference = 0.000000
+ALA_LEU_1.out difference = 1.571780
+ALA_LEU_2.out difference = 0.582074
+ALA_LEU_3.out difference = 1.707065
+ALA_LEU_4.out difference = -0.553580
+ALA_LEU_5.out difference = 0.762360
+ALA_MET_0.out difference = 0.000000
+ALA_MET_1.out difference = -2.431343
+ALA_MET_2.out difference = 1.631840
+ALA_MET_3.out difference = -0.010978
+ALA_MET_4.out difference = 1.813660
+ALA_MET_5.out difference = -1.178899
+ALA_PHE_0.out difference = 0.000000
+ALA_PHE_1.out difference = -3.494497
+ALA_PHE_2.out difference = -2.488418
+ALA_PHE_3.out difference = -1.102388
+ALA_PHE_4.out difference = -0.258230
+ALA_PHE_5.out difference = -0.276209
+ALA_PRO_0.out difference = 0.000000
+ALA_PRO_1.out difference = 0.418649
+ALA_PRO_2.out difference = 2.211835
+ALA_PRO_3.out difference = 2.234412
+ALA_PRO_4.out difference = 3.545823
+ALA_PRO_5.out difference = 1.684525
+ALA_SER_0.out difference = 0.000000
+ALA_SER_1.out difference = 2.144673
+ALA_SER_2.out difference = 3.422439
+ALA_SER_3.out difference = 4.629617
+ALA_SER_4.out difference = 2.216663
+ALA_SER_5.out difference = 4.604306
+ALA_THR_0.out difference = 0.000000
+ALA_THR_1.out difference = 2.415962
+ALA_THR_2.out difference = 5.536693
+ALA_THR_3.out difference = 2.337507
+ALA_THR_4.out difference = 3.133559
+ALA_THR_5.out difference = 4.968223
+ALA_TRP_0.out difference = 0.000000
+ALA_TRP_1.out difference = -1.783615
+ALA_TRP_2.out difference = -3.648844
+ALA_TRP_3.out difference = -1.604976
+ALA_TRP_4.out difference = -2.985486
+ALA_TRP_5.out difference = -4.854004
+ALA_TYR_0.out difference = 0.000000
+ALA_TYR_1.out difference = 0.895021
+ALA_TYR_2.out difference = 0.543544
+ALA_TYR_3.out difference = 0.232752
+ALA_TYR_4.out difference = 3.033533
+ALA_TYR_5.out difference = -0.781338
+ALA_VAL_0.out difference = 0.000000
+ALA_VAL_1.out difference = -0.275210
+ALA_VAL_2.out difference = 0.476140
+ALA_VAL_3.out difference = -2.462609
+ALA_VAL_4.out difference = -1.811501
+ALA_VAL_5.out difference = -0.299325
+Block starting with ARG_ALA_0.out has no valid energy data.
+ARG_ARG_0.out difference = 0.000000
+ARG_ARG_1.out difference = -0.095314
+ARG_ARG_2.out difference = 2.633071
+ARG_ARG_3.out difference = 1.888290
+ARG_ARG_4.out difference = -0.605621
+ARG_ARG_5.out difference = NO DATA
+Block starting with ARG_ASN_0.out has no valid energy data.
+Block starting with ARG_CYS_0.out has no valid energy data.
+Block starting with ARG_GLN_0.out has no valid energy data.
+Block starting with ARG_GLY_0.out has no valid energy data.
+Block starting with ARG_HIS_0.out has no valid energy data.
+Block starting with ARG_ILE_0.out has no valid energy data.
+Block starting with ARG_LEU_0.out has no valid energy data.
+ARG_LYS_0.out difference = 0.000000
+ARG_LYS_1.out difference = 0.389303
+ARG_LYS_2.out difference = 2.286099
+ARG_LYS_3.out difference = 6.558170
+ARG_LYS_4.out difference = 1.799114
+ARG_LYS_5.out difference = 0.116279
+Block starting with ARG_MET_0.out has no valid energy data.
+Block starting with ARG_PHE_0.out has no valid energy data.
+Block starting with ARG_PRO_0.out has no valid energy data.
+Block starting with ARG_SER_0.out has no valid energy data.
+Block starting with ARG_THR_0.out has no valid energy data.
+Block starting with ARG_TRP_0.out has no valid energy data.
+Block starting with ARG_TYR_0.out has no valid energy data.
+Block starting with ARG_VAL_0.out has no valid energy data.
+ASN_ASN_0.out difference = 0.000000
+ASN_ASN_1.out difference = 3.039328
+ASN_ASN_2.out difference = 3.291833
+ASN_ASN_3.out difference = 5.043795
+ASN_ASN_4.out difference = 3.742084
+ASN_ASN_5.out difference = 2.953960
+ASN_CYS_0.out difference = 0.000000
+ASN_CYS_1.out difference = -1.081018
+ASN_CYS_2.out difference = -3.526225
+ASN_CYS_3.out difference = -0.812667
+ASN_CYS_4.out difference = -1.148009
+ASN_CYS_5.out difference = -3.254134
+ASN_GLN_0.out difference = 0.000000
+ASN_GLN_1.out difference = 2.724291
+ASN_GLN_2.out difference = 5.681076
+ASN_GLN_3.out difference = 2.292311
+ASN_GLN_4.out difference = 2.819041
+ASN_GLN_5.out difference = 4.818527
+ASN_MET_0.out difference = 0.000000
+ASN_MET_1.out difference = -3.023517
+ASN_MET_2.out difference = -3.878150
+ASN_MET_3.out difference = -1.733547
+ASN_MET_4.out difference = -4.984464
+ASN_MET_5.out difference = -4.286755
+Block starting with ASP_ALA_0.out has no valid energy data.
+ASP_ARG_0.out difference = 0.000000
+ASP_ARG_1.out difference = 0.123544
+ASP_ARG_2.out difference = -1.758576
+ASP_ARG_3.out difference = 0.898486
+ASP_ARG_4.out difference = 8.471691
+ASP_ARG_5.out difference = 3.901853
+Block starting with ASP_ASN_0.out has no valid energy data.
+Block starting with ASP_ASP_0.out has no valid energy data.
+Block starting with ASP_CYS_0.out has no valid energy data.
+Block starting with ASP_GLN_0.out has no valid energy data.
+Block starting with ASP_GLU_0.out has no valid energy data.
+ASP_GLY_0.out difference = NO DATA
+ASP_GLY_1.out difference = NO DATA
+ASP_GLY_2.out difference = NO DATA
+ASP_GLY_3.out difference = NO DATA
+GLN_CYS_0.out difference = 0.000000
+GLN_CYS_1.out difference = -2.445290
+GLN_CYS_2.out difference = 0.000000
+GLN_CYS_3.out difference = 0.447538
+GLN_CYS_4.out difference = -0.345659
+GLN_CYS_5.out difference = 4.863612
+GLN_GLN_0.out difference = 119650.844569
+GLN_GLN_1.out difference = 119652.212880
+GLN_GLN_2.out difference = 0.000000
+GLN_GLN_3.out difference = 0.564376
+GLN_GLN_4.out difference = 0.249531
+GLN_GLN_5.out difference = 0.613543

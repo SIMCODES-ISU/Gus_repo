@@ -5,30 +5,55 @@ output_file = Path("outputs/SCF_energy_difference.txt")
 
 
 def parse_energy(line):
-    # this is a helper function to parse the energy from a line
-    #it is above the main function so the main function can call it
     parts = line.split()
-    filename = parts[0] #name of the file
-    energy = float(parts[5]) # energy value
-    return filename, energy
+    filename = parts[0]  # name of the file
+    # Check if line contains energy value or "NO DATA HERE"
+    if "NO DATA HERE" in line:
+        return filename, None
+    try:
+        energy = float(parts[5])  # energy value
+        return filename, energy
+    except (IndexError, ValueError):
+        return filename, None
 
 
 def number_difference():
     with open(file, 'r') as f:
         lines = f.readlines()
 
+    lines = lines[1:]
+    # skip the first line if it is a header or not needed
     with open(output_file, 'w') as out:
+        out.write("Filename Difference        (Kcal/mol)\n")
+        # process lines in blocks of 6 (assuming grouped data)
         for i in range(0, len(lines), 6):
             block = lines[i:i+6]
-            # Ensure we have a complete block of 6 lines
 
-            # Parse first line energy
-            base_name, base_energy = parse_energy(block[0])
-
+            # parse the base energy (first line with valid energy)
+            base_energy = None
+            base_name = None
             for line in block:
                 name, energy = parse_energy(line)
-                diff = energy - base_energy
-                out.write(f"{name} difference = {diff * 627.509} Kcal/mol\n")
+                if energy is not None:
+                    base_energy = energy
+                    base_name = name
+                    break
+
+            if base_energy is None:
+                # no valid energy in block, write a message or skip
+                out.write(
+                    f"Block starting with {block[0].split()[0]} has no valid energy data.\n")
+                continue
+
+            # calculate and write differences for the block
+            for line in block:
+                name, energy = parse_energy(line)
+                if energy is not None:
+                    # convert Hartree to Kcal/mol
+                    diff = (energy - base_energy) * 627.509
+                    out.write(f"{name} difference = {diff:.6f}\n")
+                else:
+                    out.write(f"{name} difference = NO DATA\n")
 
 
 number_difference()
