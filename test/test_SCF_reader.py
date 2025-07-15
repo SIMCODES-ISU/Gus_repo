@@ -1,15 +1,18 @@
+import pytest
 from pathlib import Path
 
 file_path = Path(__file__).parent.parent / "outputs" / "SCF_energy.txt"
 
 
-def test_energy_file_exists():
+def test_energy_value_in_second_line():
+    assert file_path.exists(), f"File {file_path} does not exist."
+
     with open(file_path, 'r') as f:
-        first_line = f.readline().split()
-        #remove whitespace and split the fist line
-        energy = float(first_line[5])
-        float(energy)
-        assert energy == -699.782153441754
+        header = f.readline()
+        second_line = f.readline().strip().split()
+        energy = float(second_line[5])
 
-
-test_energy_file_exists()
+    expected_energy = -699.782153441754
+    tolerance = 1e-9
+    assert abs(
+        energy - expected_energy) < tolerance, f"Energy {energy} differs from expected {expected_energy}"
