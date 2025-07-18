@@ -1,4 +1,4 @@
-Filename                            (Kcal/mol)         (Seconds)
+Filename                            (Hartrees)         (Seconds)
 ALA_ALA_0.out Total SCF energy = -699.782153441754 in 2676.7s
 ALA_ALA_1.out Total SCF energy = -699.78115864278 in 2719.7s
 ALA_ALA_2.out Total SCF energy = -699.783164173855 in 2138.4s

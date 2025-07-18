@@ -1,0 +1,5 @@
+SCF_reader goes to the root directory and finds all files that end with .out and extracts the energy and time by finding the lines that start with "Total SCF energy" and "Total times". It then writes the output in the output directory.
+
+SCF_difference looks at the SCF_energy file from the output and takes every six lines into a group. With that group, take the first number of the group and have every number in the group subtract from the first number. It is then multiplied by 627.509 to convert it to Kcal/mol.
+
+Atomic_info reads all the .out files and finds where it says "Mulliken analysis of the total density," and takes the necessary information and writes it to a new .txt file for every file. If a file does not have it, then there is no .txt for that file. Rather, it is placed in a list and written on the last .txt in atomic_info.
