@@ -1,0 +1,1 @@
+Each of the tests is given an expected output and asserts the files in the outputs directory if they match.

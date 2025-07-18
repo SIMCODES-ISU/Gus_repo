@@ -2,7 +2,7 @@ from pathlib import Path
 
 file = Path("outputs/SCF_energy.txt")
 output_file = Path("outputs/SCF_energy_difference.txt")
-
+#file paths
 
 def parse_energy(line):
     parts = line.split()
@@ -10,11 +10,13 @@ def parse_energy(line):
     # Check if line contains energy value or "NO DATA HERE"
     if "NO DATA HERE" in line:
         return filename, None
+    # if it does not contain energy value, return None
     try:
         energy = float(parts[5])  # energy value
         return filename, energy
     except (IndexError, ValueError):
         return filename, None
+    # if it fails to parse the energy value, return None
 
 
 def number_difference():
@@ -54,6 +56,7 @@ def number_difference():
                     out.write(f"{name} difference = {diff:.6f}\n")
                 else:
                     out.write(f"{name} difference = NO DATA\n")
+                    # difference and write NO DATA if energy is None
 
 
 number_difference()

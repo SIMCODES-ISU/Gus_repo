@@ -40,10 +40,10 @@ def batch_write_files_to_desktop():
 
     output_dir = Path("outputs/nwchem_inputs")
     output_dir.mkdir(exist_ok=True)
-# output directory for .nw files
+# output directory for .nw files and create it if it doesn't exist
     xyz_files = get_xyz_files()
     for xyz_file in xyz_files:
         xyz_to_nw(xyz_file, output_dir)
-
+# convert each .xyz file to .nw file and save it in the output directory
 
 batch_write_files_to_desktop()

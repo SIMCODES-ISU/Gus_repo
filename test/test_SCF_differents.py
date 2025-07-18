@@ -2,7 +2,7 @@ from pathlib import Path
 
 file_path = Path(__file__).parent.parent / "outputs" / \
     "SCF_energy_difference.txt"
-
+#file path
 
 def test_all_number_graber():
     # Check if file exists
