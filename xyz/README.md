@@ -1,0 +1,1 @@
+Xyz_to_nw takes all files with the .xyz extension and converts them to .nw files by extracting the coordinates and writing them into a new file for each file.
