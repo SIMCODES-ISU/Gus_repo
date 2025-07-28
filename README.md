@@ -1,1 +1,0 @@
-The purpose of this depository is to take the output from NWChem, which is in the "inputs" directory, and extract the energy and time. It also converts XYZ files to NW files to be used in NWChem tests. 
