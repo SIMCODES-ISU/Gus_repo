@@ -1,7 +1,7 @@
 from pathlib import Path
 
-file = Path("outputs/SCF_energy.txt")
-output_file = Path("outputs/SCF_energy_difference.txt")
+file = Path("energy_reader/outputs/SCF_energy.txt")
+output_file = Path("energy_reader/outputs/SCF_energy_difference.txt")
 #file paths
 
 def parse_energy(line):

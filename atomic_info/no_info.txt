@@ -1,4 +1,4 @@
-files that do not have the information:
+Files that do not have the information:
 ARG_MET_5.out
 ASP_GLY_1.out
 ASP_GLY_0.out
