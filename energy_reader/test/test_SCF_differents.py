@@ -1,6 +1,6 @@
 from pathlib import Path
 
-file_path = Path(__file__).parent.parent / "outputs" / \
+file_path = Path(__file__).parent.parent / "energies" / \
     "SCF_energy_difference.txt"
 #file path
 

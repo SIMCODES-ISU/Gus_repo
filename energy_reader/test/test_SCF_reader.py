@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 
-file_path = Path(__file__).parent.parent / "outputs" / "SCF_energy.txt"
+file_path = Path(__file__).parent.parent / "energies" / "SCF_energy.txt"
 #file path
 
 def test_energy_value_in_second_line():

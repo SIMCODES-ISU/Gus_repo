@@ -40,7 +40,7 @@ def energy_reader(root_directory):
     results.sort(key=lambda x: x[0])
     # sort on the first element of the tuple, which is the filename
 
-    output_path = Path("energy_reader/outputs/SCF_energy.txt")
+    output_path = Path("energy_reader/energies/SCF_energy.txt")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     # path to the output file, create the directory if it does not exist
     with open(output_path, 'w') as w:

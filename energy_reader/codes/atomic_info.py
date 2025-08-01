@@ -44,7 +44,7 @@ def write():
     output_dir = Path("energy_reader/atomic_info")
     output_dir.mkdir(parents=True, exist_ok=True)
 # output dir path and create it if it doesn't exist
-    missing_file_log = output_dir / "no_info.txt"
+    missing_file_log = output_dir / "_no_info.txt"
     missing_files = []
 # files that do not have the desired information
     out_files = get_out_files()
